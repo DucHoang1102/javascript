@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Hocjavascript</title>
+	<script type="text/javascript" src="validate-form-1.js"></script>
+	<script type="text/javascript"/>
+ 
+	</script>
+	<noscript>
+		Sorry... Javascript khong duoc kich hoat hoac khong dc ho tro
+	</noscript>
+</head>
+<body>
+	<form action="" name="myForm1" onsubmit="return(validate());">
+		<span>Name: </span><input type="text" name="Name" /><br /><br />
+		<span>Email: </span><input type="text" name="Email" onchange="validate_mail()"/><br /> <br />
+		<span>Zip Code: </span><input type="text" name="Zipcode"/><br> <br>
+		<select name="Country" id="">
+			<option value="0" selected>[choose yours]</option>
+			<option value="1">Hà Nội</option>
+			<option value="2">Thành Phố HCM</option>
+			<option value="3">Hải Phòng</option>
+			<option value="4">Đà Nẵng</option>
+		</select><br> <br>
+		<input type="submit" value="submit">
+	</form>
+</body> 
+</html>
