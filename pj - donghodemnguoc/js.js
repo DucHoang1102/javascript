@@ -8,8 +8,7 @@ function init(){
 	view_sec = document.getElementById("view-sec");
 
 	/*Tao nut Play( Pause / Play)*/
-	playpause = document.getElementById("playpause")
-
+	playpause = document.getElementById("playpause");
 }
 
 function setTime(){
@@ -71,12 +70,12 @@ function pauseTime_playTime(){
 
 function resetTime(){
 	clearInterval(start);
-	document.getElementById("sec").value = ""
-	document.getElementById("minute").value = ""
-	document.getElementById("hour").value = ""
+	document.getElementById("sec").value = "";
+	document.getElementById("minute").value = "";
+	document.getElementById("hour").value = "";
 	view_sec.innerHTML = "00";
 	view_minute.innerHTML = "00";
-	view_hour.innerHTML = "00"
+	view_hour.innerHTML = "00";
 }
 
 window.onload = init;
