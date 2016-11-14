@@ -1,0 +1,12 @@
+#set-time .clock{
+	width: 30px;
+}
+
+#view-time{
+	padding-top: 10px;
+	font-size: 50px;
+}
+
+#view-time span{
+	background-color: #EEEEEE;
+}
