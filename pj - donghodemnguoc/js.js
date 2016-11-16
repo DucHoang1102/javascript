@@ -20,22 +20,24 @@ function setTime(){
 
 	if(flag)
 	{
-		sec = sec - 1;
- 
- 		if (sec === -1){
- 			if(minute > 0){
- 				minute = minute - 1;
- 				sec = 59;
- 			}
- 			if(hour > 0){
- 				hour = hour - 1;
- 				minute = 59;
- 				sec = 59;
- 			}
- 		}
- 		view_sec.innerHTML = sec;
-		view_minute.innerHTML = minute;
-		view_hour.innerHTML = hour;
+
+		if (sec > -1){
+			sec = sec -1;
+		}
+
+		if((minute > -1) && (sec === -1)){
+			minute = minute -1;
+			sec = 59;
+		}
+
+		if((hour > 0) && (minute === -1)){
+			hour = hour - 1;
+			minute = 59;
+		}
+
+		giay.innerHTML = sec;
+		phut.innerHTML = minute;
+		gio.innerHTML = hour;
 	}
 	 
 	else{
