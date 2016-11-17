@@ -35,9 +35,9 @@ function setTime(){
 			minute = 59;
 		}
 
-		giay.innerHTML = sec;
-		phut.innerHTML = minute;
-		gio.innerHTML = hour;
+		view_sec.innerHTML = sec;
+		view_minute.innerHTML = minute;
+		view_hour.innerHTML = hour;
 	}
 	 
 	else{
